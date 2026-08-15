@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geburtstagsrätsel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Geburtstagsrätsel</h1>
+        <section class="explanation-section active">
+            <h2>Erklärung</h2>
+            <p>Hallo Flo!</p>
+            <p>Dieses Jahr musst du dir dein Geburtstagsgeschenk selbst erarbeiten!</p>
+            <p>Dafür haben wir dir ein Rätsel vorbereitet. Um dieses Rätsel zu lösen, findest du im ganzen Haus Zahlen versteckt, die du finden musst.</p>
+            <p>Erst wenn du alle Zahlen gefunden hast, erhälst du dein Geschenk. Daher, viel Glück!</p>
+            <button data-action="next-section">Zum Rätsel</button>
+        </section>
+         <section class="riddle-section" data-riddle="1">
+            <h2>Rätselaufgabe 1</h2>
+            <p>Erstes Rätsel</p>
+            
+            <!-- Hier kommt die erste Rätselaufgabe mit einem Input-Feld und einem Button -->
+            <input type="text" placeholder="Gefundene Zahl eingeben">
+            <button data-action="check-answer">Antwort prüfen</button>
+        </section>
+         <section class="riddle-section" data-riddle="2">
+            <h2>Rätselaufgabe 2</h2>
+            <p> Zweites Rätsel</p>
+            
+            <!-- Hier kommt die erste Rätselaufgabe mit einem Input-Feld und einem Button -->
+            <input type="text" placeholder="Gefundene Zahl eingeben">
+            <button data-action="check-answer">Antwort prüfen</button>
+        </section>
+            <section class="riddle-section" data-riddle="3">
+            <h2>Rätselaufgabe 3</h2>
+            <p> Drittes Rätsel</p>
+            
+            <!-- Hier kommt die erste Rätselaufgabe mit einem Input-Feld und einem Button -->
+            <input type="text" placeholder="Gefundene Zahl eingeben">
+            <button data-action="check-answer">Antwort prüfen</button>
+        </section>
+            <section class="riddle-section" data-riddle="4">
+            <h2>Rätselaufgabe 4</h2>
+            <p> Viertes Rätsel</p>
+            
+            <!-- Hier kommt die erste Rätselaufgabe mit einem Input-Feld und einem Button -->
+            <input type="text" placeholder="Gefundene Zahl eingeben">
+            <button data-action="check-answer">Antwort prüfen</button>
+        </section>
+        <section class="final-choice-section">
+            <h2>Herzlichen Glückwunsch!</h2>
+            <p>Du hast alle Rätsel gelöst. Nun bleibt die Qual der Wahl!</p>
+            <p>Du hast die Entscheidung zwischen normalem GoKart und einer Mario Kart Edition.</p>
+            <div class="grid">
+                <div class="card">
+                    <h3>Normaler GoKart</h3>
+                    <button data-action="choose-gokart">Wählen</button>
+                </div>
+                <div class="card">
+                    <h3>Mario Kart Edition</h3>
+                    <button data-action="choose-mario-kart">Wählen</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
